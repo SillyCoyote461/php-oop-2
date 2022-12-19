@@ -7,7 +7,8 @@ class Toy extends Product{
     public $size;
 
     public function __construct(
-        string $name,       
+        String $image,
+        String $name,       
         Category $category,
         Float $price,
         
@@ -16,7 +17,7 @@ class Toy extends Product{
     ){
         $this->characteristics = $characteristics;
         $this->size = $size;
-        parent::__construct($name,$category,$price,$characteristics,$size);
+        parent::__construct($image,$name,$category,$price,$characteristics,$size);
     }
 }
 

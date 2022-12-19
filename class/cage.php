@@ -7,7 +7,8 @@ class Cage extends Product{
     public $size;
 
     public function __construct(
-        string $name,       
+        String $image,
+        String $name,       
         Category $category,
         Float $price,
 
@@ -16,7 +17,7 @@ class Cage extends Product{
     ){
         $this->material = $material;
         $this->size = $size;
-        parent::__construct($name,$category,$price,$material,$size);
+        parent::__construct($image,$name,$category,$price,$material,$size);
     }
 }
 
